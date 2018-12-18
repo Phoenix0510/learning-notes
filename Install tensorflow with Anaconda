@@ -17,3 +17,19 @@ Using:
     source deactivate
 
     source activate tensorflow
+    
+ 
+ Install tensorflow on windows:
+  1. Install Anaconda (Anaconda3-5.3.1-Windows-x86_64)
+  2. Install Pythgon (python-3.7.1-amd64)
+  3. python -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
+
+ 
+testing:
+  >>> import tensorflow as tf
+  >>> a = tf.constant(10)
+  >>> b = tf.constant(32)
+  >>> sess = tf.Session()
+  >>> print(sess.run(a + b))
+  42
+  >>>
